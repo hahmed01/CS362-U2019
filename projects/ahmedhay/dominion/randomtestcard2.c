@@ -2,7 +2,6 @@
 #include <math.h>
 #include <stdlib.h>
 #include <string.h>
-#include <limits.h>
 
 #include "dominion.h"
 #include "dominion_helpers.h"
@@ -37,7 +36,7 @@ int main(){
     int result = 0;
 
     printf("Random Testing MINION card\n");
-    for(int i = 0; i < 600; i++){
+    for(int i = 0; i < 10000; i++){
 
         memset(&state, 23, sizeof(struct gameState));
         memset(&preState, 23, sizeof(struct gameState));
